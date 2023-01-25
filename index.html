@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="lista">
+        <div class="ambur">
+            <div class="row">
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul>
+              <li><div class="column">
+                <img class="demo cursor w100p" src="recursos/Diapositiva1.png" style="width: 100%;" onclick="currentSlide(1)" alt="caption 1">
+                <p><b>Slide 1</b></p>
+            </div></li>
+              <li><div class="column">
+                <img class="demo cursor w100p" src="recursos/Diapositiva2.png" style="width: 100%;" onclick="currentSlide(2)" alt="caption 2">
+                <p><b>Slide 2</b></p>
+            </div></li>
+              <li><div class="column">
+                <img class="demo cursor w100p" src="recursos/Diapositiva3.png" style="width: 100%;" onclick="currentSlide(3)" alt="caption 3">
+                <p><b>Slide 3</b></p>
+            </div></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fotos">
+        <div class="slides">
+            <img src="recursos/Diapositiva1.png" style="width: 100%;">
+        </div>
+        <div class="slides">
+            <img src="recursos/Diapositiva2.png" style="width: 100%;">
+        </div>
+        <div class="slides">
+            <img src="recursos/Diapositiva3.png" style="width: 100%;">
+        </div>
+    </div>
+
+    <main>
+        <div class="controls">
+            <div class="back" onclick="plusSlides(-1)">
+                <p><b >back</b></p>
+            </div>
+            <div class="contador">
+                <p><b>1/3</b></p>
+            </div>
+            <div class="contador">
+                <p><b>2/3</b></p>
+            </div>
+            <div class="contador">
+                <p><b>3/3</b></p>
+            </div>
+            <div class="next" onclick="plusSlides(1)">
+                <p><b>next</b></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/application.js"></script>
+</body>
+</html>
